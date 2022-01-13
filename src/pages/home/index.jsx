@@ -1,4 +1,4 @@
-import usePokemonList from "../../queries/poke-query";
+import { usePokemonList } from "../../queries/poke-query";
 import Card from "../../components/card";
 
 const Home = (props) => {
@@ -21,7 +21,7 @@ const Home = (props) => {
   }
 
   return (
-    <div class="grid grid-cols-4 p-5 gap-y-10 gap-x-10">
+    <div class="grid grid-cols-1 p-5 gap-y-10 gap-x-10 sm:grid-cols-2 md:grid-cols-4">
       { pokemonList.data.map((poke, index) => renderCards(poke, index)) }
     </div>
   );

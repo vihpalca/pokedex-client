@@ -6,3 +6,7 @@ export function getPokemonList() {
   return axios.get(`${POKE_SERVICE.external}/pokemon?limit=151&offset=0`);
 }
 
+export function getPokemon(name) {
+  return axios.get(`${POKE_SERVICE.external}/pokemon/${name}`);
+}
+

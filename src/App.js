@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { QueryClient, QueryClientProvider } from 'react-query';
 import { ReactQueryDevtools } from "react-query/devtools";
 import Home from './pages/home';
+import PokemonDetail from './pages/detail';
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/detail/:name" element={<PokemonDetail />} />
         </Routes>
       </BrowserRouter>
       <ReactQueryDevtools />
