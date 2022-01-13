@@ -21,7 +21,7 @@ const PokemonDetail = () => {
       </div>
       <div class="flex flex-col items-center">
         <span class="py-5 font-montserrat uppercase">{name} N° {pokemon.data.id}</span>
-        <div class="grid grid-cols-2 gap-x-5 mt-4">
+        <div class="grid grid-cols-1 gap-x-5 mt-4 md:grid-cols-2">
           <div class="p-3 bg-slate-100 rounded-md">
             <img src={`${URL_IMG}/${pokemon.data.id}.png`} alt="" />
           </div>

@@ -8,7 +8,7 @@ const Card = ({ imgId, name }) => {
         <div class="p-3 bg-slate-100 rounded-md">
           <img src={`${URL_IMG}/${imgId}.png`} alt="" />
         </div>
-        <label class="text-sm">{name}</label>
+        <label class="text-sm font-montserrat">{name}</label>
       </div>
     </Link>
   );
